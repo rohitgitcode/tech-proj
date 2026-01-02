@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Shield, Phone, ChevronRight, ArrowLeft, Sparkles, Lock } from 'lucide-react';
+import { Phone, ChevronRight, ArrowLeft, Sparkles, Lock } from 'lucide-react';
+import Logo from '@/components/Logo';
+import PageTransition from '@/components/PageTransition';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -83,11 +85,8 @@ const Login = () => {
       <div className="orb w-64 h-64 bg-primary/15 -top-20 -left-20" />
       <div className="orb w-40 h-40 bg-accent/10 bottom-20 -right-10" />
 
-      <div className="flex items-center gap-3 mb-12 relative z-10">
-        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/40 to-accent/30 flex items-center justify-center">
-          <Shield size={30} className="text-primary" />
-        </div>
-        <span className="text-2xl font-bold text-gradient">SafeRoute</span>
+      <div className="relative z-10 mb-12">
+        <Logo size="md" />
       </div>
 
       <div className="flex-1 relative z-10">
@@ -129,7 +128,7 @@ const Login = () => {
       </div>
 
       <div className="glass-card p-4 flex items-start gap-3 relative z-10">
-        <Shield size={22} className="text-primary flex-shrink-0" />
+        <Lock size={22} className="text-primary flex-shrink-0" />
         <p className="text-sm text-muted-foreground">Your safety is our priority. We use bank-level encryption to protect your information.</p>
       </div>
     </div>
