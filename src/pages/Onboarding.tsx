@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Shield, MapPin, Users, ChevronRight, Bell, Camera, Mic, Sparkles, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import PageTransition from '@/components/PageTransition';
+import Logo from '@/components/Logo';
 
 const slides = [
   {

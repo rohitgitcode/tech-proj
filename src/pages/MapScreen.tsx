@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, ArrowLeft, Navigation, Sparkles } from 'lucide-react';
+import { motion } from 'framer-motion';
 import MapPlaceholder from '@/components/MapPlaceholder';
 import BottomSheet from '@/components/BottomSheet';
 import RouteCard from '@/components/RouteCard';
 import SOSButton from '@/components/SOSButton';
 import BottomNav from '@/components/BottomNav';
+import PageTransition from '@/components/PageTransition';
 import { mockRoutes } from '@/mock/data';
 import type { Route } from '@/mock/data';
 

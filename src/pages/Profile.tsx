@@ -16,8 +16,11 @@ import {
   Settings,
   Crown,
 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import BottomNav from '@/components/BottomNav';
+import PageTransition from '@/components/PageTransition';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface ToggleItemProps {
   icon: React.ElementType;
