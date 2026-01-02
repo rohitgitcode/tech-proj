@@ -1,7 +1,6 @@
-# Welcome to your Lovable project
 
 
-
+# welcome to the project 
 
 
 **Use your preferred IDE**
@@ -50,6 +49,18 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Firebase Journey
+- Implemented Firebase Authentication for secure login with phone number + OTP.
+- Designed Firestore database schema to store user profiles, destinations, and safety reports.
+- Built Cloud Functions to handle safety scoring logic and SOS triggers.
+- Configured environment variables securely using .env and integrated them into the frontend.
+- Overcame challenges like CORS issues and Node version mismatches during migration.
+  ## Vercel Deployment
+- Deployed the SafePath frontend using Vercel’s free tier for seamless hosting.
+- Imported environment variables directly into Vercel for reproducible builds.
+- Verified branding updates (title, metadata, Open Graph image) after redeployment.
+- Shared live deployment link with teammates for integration and testing.
+- Leveraged Vercel’s auto‑redeploy on Git commits to keep the app continuously updated.
 
 
 ## Can I connect a custom domain to my project?
